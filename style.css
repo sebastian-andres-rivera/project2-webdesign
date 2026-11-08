@@ -1,0 +1,237 @@
+.container {
+    width: 100%;
+    padding: 10%;
+    box-sizing: border-box;
+}
+@media (min-width: 786px){
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1024px){
+    .container {
+        width: 80%;
+        max-width: 1200px;
+    }
+}
+html {
+  height: 100%;
+  background: 50% 50% no-repeat
+    url(https://images.pexels.com/photos/11385965/pexels-photo-11385965.jpeg);
+    width: auto;
+    height: auto; 
+}
+body {
+  margin: 0px;
+  font-family: Lucida-Fax, Constantia, Constantia;
+  line-height: 1.6;
+  column-gap: 16px;
+  row-gap: 0;
+}
+h1 {
+  /* Color Scheme; White, Peach, Orange, Yellow Green, Café Brown. */
+  font-family: Elephant;
+  color: Orange;
+  text-align: center; 
+}
+h2 {
+  font-family: Lucida-Fax;
+  color: brown;
+  text-align: center;
+}
+h3 {
+  font-family: Lucida-Fax;
+  color: brown;
+}
+h4 {
+  font-family: Lucida-Fax;
+  color: brown;
+}
+p {
+  font-family: Constantia;
+  color: black;
+}
+main {
+  margin-left: 20px; 
+  margin-right: 20px; 
+}
+header input[type="search"]{
+  padding: 4px; 
+  width: 12rem;
+}
+header input[type="button"]{
+  padding: 10px;
+  width: 4rem; 
+  background-color: brown;
+  color: antiquewhite;
+  font-family: Constantia;
+}
+header input[type="button"]:hover{
+  background-color: antiquewhite;
+  color: brown;
+}
+header ul{
+  list-style-type: none;
+  background-color: #f5ad36;
+  width: auto; 
+  height: 56px; 
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  gap: 12px; 
+  display: flex; 
+  align-items: center;
+}
+header img{
+  list-style-type: none;
+  background-color: white; 
+  width: 180px; 
+  height: 56px; 
+  margin: 0px; 
+  padding: 8px 12px;
+  object-fit: contain; 
+  box-sizing: border-box;
+  float: left;
+  flex-shrink: 0;
+}
+header a{
+  color: antiquewhite;
+  text-decoration: none; 
+  padding: 12px;
+  display: block; 
+  text-align: center;
+}
+header a:hover{
+  background-color: antiquewhite;
+  color: #f5ad36;
+}
+header li{
+  float: left;
+}
+aside {
+  float: left; 
+  width: 180px; 
+  display: flex; 
+}
+aside nav{
+  position: sticky;
+  top: 0; 
+  align-self: start; 
+}
+aside ul{ 
+  list-style-type: none;
+  background-color: #FCE136; 
+  padding: 4px; 
+  margin: 0px;
+  display: flex; 
+  flex-direction: column;
+  gap: 16px; 
+  align-items: center;
+} 
+aside a{
+  color: black;
+  display: block;
+  text-align: center;
+}
+aside a:hover{
+  background-color: white; 
+  color: orange;
+}
+aside img{
+  background-color: white; 
+  height: 372px;
+  width: 172px;
+}
+#advertisement{
+  width: 100%;
+  height: auto;  
+}
+main {
+  background-color: white;
+  margin: 1rem;
+  padding: 16px;
+  margin-left: 200px;
+}
+#mainhero {
+  border: 1px solid brown;
+  padding: 12px;
+}
+.recipe-image {
+  width: 100%;
+  height: auto;
+}
+.grid-items {  
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.grid-items img{
+  transition: box-shadow 200ms ease-out;
+}
+.grid-items img:hover{
+  box-shadow: 0 0 12px 3px rgba(245, 173, 54, 0.7);
+}
+.grid-items button{
+  background-color: white;
+  border: 1px solid brown;
+  padding: 12px;
+}
+.grid-items button:hover{
+  border: 1px solid orange;
+  background-color: lightgray;  
+} 
+@media (max-width: 640px) {
+  .grid-items {
+    grid-template-columns: 1fr;
+  }
+}
+footer ul{
+  list-style-type: none;
+  background-color: gray;
+  padding: 0px;
+  margin: 0px; 
+  overflow: hidden; 
+}
+footer a{
+  color: whitesmoke; 
+  text-decoration: none; 
+  padding: 15px; 
+  display: block; 
+  text-align: center; 
+  font-size: 12px;
+}
+footer a:hover{
+  color: skyblue;
+}
+footer li{
+  float: left;
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  grid-template-columns: 180px minmax(0, 1fr);
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+header {
+  grid-area: header;
+}
+aside {
+  grid-area: sidebar;
+  background-color: #FCE136;
+}
+aside ul {
+  background-color: transparent;
+  flex-direction: column;
+}
+main {
+  grid-area: content;
+  margin-left: 0;
+}
+footer {
+  grid-area: footer;
+}
